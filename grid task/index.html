@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid-photos</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            font-family: "Raleway", Arial, sans-serif;
+        }
+
+        .top {
+            background-color: rgb(223, 226, 226);
+            display: flex;
+            gap: 85%;
+            padding: 30px;
+        }
+
+        a :hover {
+            background-color: darkgray;
+        }
+
+        .container {
+            display: grid;
+            height: 100vh;
+            width: 100vw;
+            grid-template-columns: 600px 600px;
+            grid-template-rows: 350px 400px 300px;
+            grid-template-areas: "pic1 pic2"
+                "pic3 pic4"
+                "pic5 pic4";
+
+        }
+
+        .card1 img {
+            width: 50vw;
+            height: 340px;
+        }
+
+        .card2 img {
+            width: 52vw;
+            height: 350px;
+        }
+
+        .card3 img {
+            width: 48vw;
+            height: 380px;
+        }
+
+        .card4 img {
+            width: 52vw;
+            height: 700px;
+        }
+
+        .card5 img {
+            width: 47vw;
+            height: 380px;
+        }
+
+        .about h1 {
+            z-index: 1000;
+            margin-top: 600px;
+            display: flex;
+            justify-content: center;
+
+        }
+
+        .boy img {
+            transform: translateX(500px);
+
+        }
+        p{
+            width: 70vw;
+            
+            /* margin: 30px; */
+            /* padding: 20%; */
+        }
+        .form{
+            display:block;
+            /* margin-left: 170px; */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="top">
+        <a>
+            <h2>MY ART</h2>
+        </a>
+        <a>
+            <h4>About</h4>
+        </a>
+    </div>
+
+    <div class="container">
+
+        <div class="card1"><img src="pic1.jpg"></div>
+        <div class="card2"><img src="pic2.jpg"></div>
+        <div class="card3"><img src="pic3.jpg"></div>
+        <div class="card4"><img src="pic4.jpg"></div>
+        <div class="card5"><img src="streetart5.jpg"></div>
+    </div>
+    <br>
+    <div class="about">
+        <h1>About</h1>
+    </div>
+    <br>
+    <br>
+    <div class="boy">
+        <img src="boy.jpg" width="300px " height="340px">
+    </div>
+    <br><br>
+    <center>
+    <p>Just me, myself and I, exploring the universe of unknownment. I have a heart of love and an interest of lorem
+        ipsum and mauris neque quam blog. I want to share my world with you. Praesent tincidunt sed tellus ut rutrum.
+        Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla. Praesent tincidunt
+        sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non
+        fringilla.</p>
+    </center>
+    <br>
+    <br>
+    <center>
+        <p  style="color: red;">Do not hesitate to contact me!</p>
+    </center>
+    <br>
+    <div class="form">
+        <center>
+        <div style="display: block; ">
+       <p> <label >NAME</label></p>
+        <input type="text" required  style="width: 650px; height: 30px;">
+    </div>
+    <br>
+    <div>
+       <p> <label >Email</label></p>
+        <input type="text" required  style="width: 650px; height: 30px;">
+    </div>
+    <br>
+
+    <div>
+      <p>  <label >Message</label></p>
+        <input type="text" required  style="width: 650px; height: 30px;">
+</div>
+<br>
+<button style="width: 650px; height: 30px; background-color: darkgrey;" >Send</button>
+</center>
+<br>
+<br>
+<center>
+    powerd by <a href="https://www.w3schools.com/w3css/default.asp">rajesh</a>
+</center>
+
+    </div>
+</body>
+
+</html>
